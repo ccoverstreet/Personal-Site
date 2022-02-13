@@ -34,9 +34,10 @@ func RootHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 var AssetsMap = map[string]string{ // Maps to MIME type
-	"standard.css": "text/css",
-	"home.css":     "text/css",
-	"Portrait.jpg": "image/jpeg",
+	"standard.css":     "text/css",
+	"home.css":         "text/css",
+	"Portrait.jpg":     "image/jpeg",
+	"material.min.css": "text/css",
 }
 
 func AssetsHandler(w http.ResponseWriter, r *http.Request) {
