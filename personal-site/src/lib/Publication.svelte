@@ -1,21 +1,27 @@
 <script>
 	let abstractVisible = false;
+
+	export let articleTitle = "";
+	export let articleLink = ""
+	export let journalName = "";
+	export let abstract = "";
 </script>
 
-<div>
-	<p><em><slot name="title"></slot></em></p>
+<div id="holder">
+	<p><em><a href={articleLink}>{articleTitle}<a></em></p>
 	<div id="contents">
-		<p><slot name="journal"></slot></p>
-
+		<p>{journalName}</p>
 		<br>
-
 		<button on:click={() => {abstractVisible = !abstractVisible}}>{#if abstractVisible}Abstract &gt{:else}Abstract &lt{/if} </button>
-		<p id="abstract" hidden="{!abstractVisible}"><slot name="abstract"></slot></p>
-
+		<p id="abstract" hidden="{!abstractVisible}">{abstract}</p>
 	</div>
 </div>
 
 <style>
+	#holder {
+		background-color: var(--clr-surface-1);
+	}
+
 	#abstract {
 		padding: 1em;
 		line-height: 2rem;

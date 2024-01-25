@@ -10,10 +10,12 @@
 
 <style>
 	div {
-		border-radius: 0.25rem;
-		padding: 0.5em;
-		display: inline-block;
-		width: 100%;
+		border-radius: 0.5rem;
+		padding: 0.5rem;
+		margin: 0.5rem auto;
+		display: block;
+		width: min(120ch, calc(100% - 1em));
+		background-color: var(--clr-surface-1);
 	}
 
 	div > div {
