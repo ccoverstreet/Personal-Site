@@ -7,6 +7,11 @@
  ">
 
 	<div style="flex-grow:2"></div>
+
+	<a class="icon-link" href="https://dismat.utk.edu/people/cale-overstreet/" >
+		<img class="link-image" src="/819px-UT_Knoxville_logo_2015.svg.png"/>
+	</a>
+
 	<a class="icon-link" href="https://orcid.org/0000-0001-6595-3767" >
 		<img class="link-image" src="/1024px-ORCID_iD.svg.png"/>
 	</a>

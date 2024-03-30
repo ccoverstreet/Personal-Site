@@ -1,7 +1,9 @@
 package frontend
 
-import "fmt"
+import (
+	"os"
+)
 
-func main() {
-	fmt.Println("vim-go")
+func IndexFile() ([]byte, error) {
+	return os.ReadFile("frontend/build/index.html")
 }
