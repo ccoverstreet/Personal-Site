@@ -1,8 +1,5 @@
-module github.com/ccoverstreet/calesite
+module github.com/ccoverstreet/cale-site
 
-go 1.17
+go 1.20
 
-require (
-	github.com/gorilla/mux v1.8.0 // indirect
-	github.com/rs/zerolog v1.26.0 // indirect
-)
+require github.com/go-chi/chi/v5 v5.0.12 // indirect
