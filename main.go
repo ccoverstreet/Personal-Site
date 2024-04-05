@@ -13,6 +13,9 @@ import (
 func main() {
 	router := chi.NewRouter()
 	router.Use(middleware.Logger)
+	compressor := middleware.NewCompressor(5)
+	router.Use(compressor.Handler)
+
 	router.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		b, err := frontend.IndexFile()
 		if err != nil {
