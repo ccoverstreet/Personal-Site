@@ -15,13 +15,18 @@
 			link: "https://github.com/ccoverstreet/Forestry",
 			imageSrc: "/network-page.png",
 		},
+		{
+			name: "Salad Notes",
+			description: "Locally hosted markdown notetaking system with web editor",
+			link: "https://github.com/ccoverstreet/salad-notes",
+			imageSrc: "/salad-notes.png",
+		},
 	]
 </script>
 
 <Toolbar/>
 
 <div id="content">
-
 	<div id="intro-banner">
 		<h1>Projects</h1>
 	</div>
@@ -81,8 +86,4 @@
 		min-width: 40ch;
 		max-width: 45ch;
 	}
-
-
-
-
 </style>
