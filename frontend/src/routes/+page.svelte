@@ -131,8 +131,6 @@
 	</div>
 
 
-	<div style="height: 100vh">
-	</div>
 </div>
 
 <style>
@@ -144,6 +142,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin: 0;
+		min-height: 100vh;
 	}
 
 	#intro-banner > * {

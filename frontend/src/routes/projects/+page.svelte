@@ -73,6 +73,7 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
+		min-height: 100vh;
 	}
 
 	#project-cards {
