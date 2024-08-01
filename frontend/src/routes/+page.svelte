@@ -104,25 +104,25 @@
 
 	</div>
 
-	<div id="main-content">
-		<div id="about-me" class="card">
-			<div class="card-header">
-				<h1>About Me</h1>
-			</div>
+	<div id="about-me" class="card">
+		<div class="card-header" style="height: 2rem;">
+			<h1>About Me</h1>
+		</div>
 
-			<div style="display: flex; flex-wrap: wrap; padding: 1rem;">
-				<p style="min-width: 25ch;">
-					Welcome to my site! I am Cale Overstreet, a Ph.D. student at the University of Tennessee Knoxville in the Nuclear Engineering Department, specializing in the study of amorphous phases of complex oxides and their associated physical properties. I have had the privilege of performing experiments at national and international user facilities,  I hold an undergraduate degree in nuclear engineering from the University of Tennessee Knoxville.
-
-					<br>
-					<br>
-
-					Beyond the academic sphere, I enjoy learning and becoming proficient with programming, which serves both as a research tool and a personal pursuit. In my free-time, I enjoy playing guitar and exploring Knoxville through cycling.
-				</p>
-
-			</div>
+		<div style="display: flex; flex-wrap: wrap; padding: 1rem;">
+			<p style="min-width: 25ch;">
+				Welcome to my site! I am Cale Overstreet, a Ph.D. student at the University of Tennessee Knoxville in the Nuclear Engineering Department, with an undergraduate degree in nuclear engineering from the University of Tennessee Knoxville, specializing in the study of amorphous phases of complex oxides and their associated physical properties. I have had the privilege of performing experiments at national and international user facilities. 
+				<br>
+				<br>
+				Beyond the academic sphere, I enjoy learning and becoming proficient with programming, which serves both as a research tool and a personal pursuit. In my free-time, I enjoy playing guitar and exploring Knoxville through cycling.
+			</p>
 
 		</div>
+
+	</div>
+
+	<div id="main-content">
+		
 
 		{#each linkCards as lc}
 			<LinkCard title={lc.title} subtitle={lc.subtitle} imageSrc={lc.imageSrc} link={lc.link}/>
@@ -131,8 +131,6 @@
 	</div>
 
 
-	<div style="height: 100vh">
-	</div>
 </div>
 
 <style>
@@ -141,7 +139,11 @@
 		background-size: cover;
 		display: flex;
 		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: center;
+		align-items: center;
+		margin: 0;
+		min-height: 100vh;
 	}
 
 	#intro-banner > * {

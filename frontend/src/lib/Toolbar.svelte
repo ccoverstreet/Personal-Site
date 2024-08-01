@@ -5,6 +5,9 @@
  justify-content: center;
  align-items; center;
  ">
+ 	<a class="icon-link" href="/">
+		<img class="link-image" src="/home-4-svgrepo-com.svg"/>
+ 	</a>
 
 	<div style="flex-grow:2"></div>
 
@@ -38,6 +41,8 @@
 	}
 
 	.link-image {
+		display: flex;
+		align-items: center;
 		height: 70%; 
 		margin: 0;
 	}
