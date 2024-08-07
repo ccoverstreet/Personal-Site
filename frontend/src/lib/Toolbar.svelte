@@ -1,9 +1,10 @@
 <div style="
  height: 3rem;
  display: flex;
- background-color:  #0C0C13;;
+ background-color:  rgba(0, 0, 0, 0);
  justify-content: center;
  align-items; center;
+ width: 100%;
  ">
  	<a class="icon-link" href="/">
 		<img class="link-image" src="/home-4-svgrepo-com.svg"/>

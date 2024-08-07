@@ -1,6 +1,5 @@
 <script>
 	import Toolbar from "$lib/Toolbar.svelte";
-	import LinkCard from "$lib/LinkCard.svelte";
 
 	const publications = [
 		{
@@ -37,9 +36,9 @@
 
 </script>
 
+<Toolbar/>
 
 <div id="intro-header" class="banner">
-	<Toolbar/>
 	<h1>Cale Overstreet</h1>
 	<p id="intro-text">
 		I am a Ph.D. student at the University of Tennessee Knoxville in the Nuclear Engineering Department, with an undergraduate degree in nuclear engineering from the University of Tennessee Knoxville, specializing in the study of amorphous phases of complex oxides and their associated physical properties. 
@@ -74,14 +73,6 @@
 	</div>
 </div>
 
-<!--
-<div class="section-centered" style="background-color: #007087">
-	<div class="section-header">
-		<h2>Projects</h2>
-	</div>
-</div>
--->
-
 <style>
 	.banner {
 		display: flex;
@@ -89,13 +80,13 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/daiscund.jpg");
-		background-size: cover;
+		background: rgb(2,0,36);
+		background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 73%, rgba(0,112,135,1) 100%);
 	}
 
 
 	#intro-header > h1 {
-		font-size: 4rem;
+		font-size: 2rem;
 		font-weight: bold;
 		color: #dddddd;
 		padding: 2rem 0.5rem;
@@ -113,9 +104,6 @@
 	.section-header {
 		display: flex;
 		width: 100%;
-		justify-content: center;
-		margin-top: 2rem;
-		margin-bottom: 3rem;
 	}
 
 	.section-centered {
@@ -131,9 +119,9 @@
 	}
 
 	h2 {
-		font-size: 2.5rem;
+		font-size: 1.5rem;
 		font-weight: bold;
-		color: var(--color-2);
+		text-decoration: underline;
 	}
 
 	.pub-section {
