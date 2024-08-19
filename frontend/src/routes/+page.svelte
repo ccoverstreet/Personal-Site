@@ -35,6 +35,23 @@
 		return a.date < b.date ? true : false;
 	});
 
+	const presentations = [
+		{
+			title: "Characterizing swift heavy ion-induced amorphous phases in complex oxides",
+			date: "2023-09-05",
+			conference: "Conference on Radiation Effects in Insulators 21",
+			location: "Fukuoka, Japan"
+		},
+		{
+			title: "Structural Stability of REE-PO4 (REE=Sm,Tb) under Swift Heavy Ion Irradiation",
+			date: "2023-10-02",
+			conference: "Materials Science & Technology 23",
+			location: "Columbus, Ohio"
+		},
+	].sort((a, b) => {
+		return a.date < b.date ? true : false;
+	});
+
 </script>
 
 
@@ -72,6 +89,27 @@
 		</div>
 	{/each}
 	</div>
+</div>
+
+<div class="section-full">
+	<div class="section-full-content">
+		<h2 >Presentations</h2>
+		
+		<br>
+		<div>
+			{#each presentations as pres}
+				<div style="padding: 0.5rem;">
+					<p>{pres.title}</p> 
+					<p>{pres.date}</p>
+					<p>{pres.conference}</p>
+					<p>{pres.location}</p>
+				</div>
+			{/each}
+		</div>
+
+	</div>
+
+	<img src="/REI-presentation.jpg"/>
 </div>
 
 <!--
@@ -127,7 +165,29 @@
 	}
 
 	.section-centered > * {
-		max-width: 60rem;
+		max-width: 80rem;
+	}
+
+	.section-full {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #f6f6f6;
+		flex-wrap: wrap;
+	}
+
+	.section-full > * {
+		flex-grow: 1;
+		min-width: 0rem;
+		width: 100%;
+		max-width: 40rem;
+	}
+
+	.section-full > img  {
+	}
+
+	.section-full-content {
+		padding: 2rem;
 	}
 
 	h2 {
