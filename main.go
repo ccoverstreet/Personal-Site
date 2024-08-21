@@ -11,6 +11,7 @@ import (
 )
 
 func main() {
+	// Using chi
 	router := chi.NewRouter()
 	router.Use(middleware.Logger)
 	compressor := middleware.NewCompressor(5)
