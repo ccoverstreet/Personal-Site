@@ -4,7 +4,7 @@
 
 	const publications = [
 		{
-			title: "Structural stability of REE-PO4 (REE=Sm,Tb) under swift heavy ion irradiation",
+			title: "Structural stability of REE-PO<sub>4</sub> (REE=Sm,Tb) under swift heavy ion irradiation",
 			authors: ["Cale Overstreet", "Jacob Cooper", "Eric O'Quinn", "William Cureton", "Raul Palomares", "Julia Leys", "Guido Deissmann", "Stefan Neumeier", "Chien-Hung Chen", "Maik Lang"],
 			journal: "Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms",
 			date: "2022",
@@ -18,7 +18,7 @@
 			link: "https://www.nature.com/articles/s41529-021-00165-6"
 		},
 		{
-			title: "Systematic study of short-and long-range correlations in RE 3 TaO 7 weberite-type compounds by neutron total scattering and X-ray diffraction",
+			title: "Systematic study of short-and long-range correlations in RE<sub>3</sub>TaO<sub>7</sub> weberite-type compounds by neutron total scattering and X-ray diffraction",
 			authors: ["Igor M Gussev", "Eric C O'Quinn", "Matthew Tucker", "Rodney C Ewing", "Cale Overstreet", "Jörg Neuefeind", "Michelle Everett", "Qiang Zhang", "David Sprouster", "Daniel Olds", "Gianguido Baldinozzi", "Maik Lang"],
 			journal: "Journal of Materials Chemistry A",
 			date: "2023",
@@ -43,11 +43,17 @@
 			location: "Fukuoka, Japan"
 		},
 		{
-			title: "Structural Stability of REE-PO4 (REE=Sm,Tb) under Swift Heavy Ion Irradiation",
+			title: "Structural Stability of REE-PO<sub>4</sub> (REE=Sm,Tb) under Swift Heavy Ion Irradiation",
 			date: "2023-10-02",
 			conference: "Materials Science & Technology 23",
 			location: "Columbus, Ohio"
 		},
+		{
+			title: "Magnetic Properties of Non-Crystalline Ho<sub>2</sub>Ti<sub>2</sub>O<sub>7</sub> Pyrochlore Prepared by Far-From-Equilibrium Processing",
+			date: "2024-10-05",
+			conference: "Materials Science & Technology 24",
+			location: "Pittsburgh, Pennsylvania"
+		}
 	].sort((a, b) => {
 		return a.date < b.date ? true : false;
 	});
@@ -99,7 +105,7 @@
 		<div>
 			{#each presentations as pres}
 				<div style="padding: 0.5rem;">
-					<p>{pres.title}</p> 
+					<p style="font-style: italic">{@html pres.title}</p> 
 					<p>{pres.date}</p>
 					<p>{pres.conference}</p>
 					<p>{pres.location}</p>
@@ -112,13 +118,6 @@
 	<img src="/REI-presentation.jpg"/>
 </div>
 
-<!--
-<div class="section-centered" style="background-color: #007087">
-	<div class="section-header">
-		<h2>Projects</h2>
-	</div>
-</div>
--->
 
 <style>
 	.banner {
