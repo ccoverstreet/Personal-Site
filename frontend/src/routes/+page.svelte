@@ -4,6 +4,13 @@
 
 	const publications = [
 		{
+			title: "Response of Lanthanide Sesquioxides to High‐Energy Ball Milling",
+			authors: ["Eric C O’Quinn",  "Alexandre P Solomon", "Casey Corbridge", "Cale Overstreet", "Cameron Tracy", "Antonio F Fuentes", "David J Sprouster", "Maik K Lang"],
+			journal: "Advanced Engineering Materials",
+			date: "2025",
+			link: "https://advanced.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adem.202401251"
+		},
+		{
 			title: "Structural stability of REE-PO<sub>4</sub> (REE=Sm,Tb) under swift heavy ion irradiation",
 			authors: ["Cale Overstreet", "Jacob Cooper", "Eric O'Quinn", "William Cureton", "Raul Palomares", "Julia Leys", "Guido Deissmann", "Stefan Neumeier", "Chien-Hung Chen", "Maik Lang"],
 			journal: "Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms",
