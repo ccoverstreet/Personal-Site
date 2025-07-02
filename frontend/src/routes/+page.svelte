@@ -86,7 +86,7 @@
 	<div>
 	{#each publications as pub}
 		<div class="pub-section">
-			<a href="{pub.link}"><p class="pub-title">{pub.title} (<span style="font-weight: bold;">{pub.date}</span>)</p></a>
+			<a href="{pub.link}"><p class="pub-title">{@html pub.title} (<span style="font-weight: bold;">{pub.date}</span>)</p></a>
 			<p class="pub-journal">{pub.journal}</p>
 			<p class="pub-authors">
 				{#each pub.authors as auth, i}
