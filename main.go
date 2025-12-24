@@ -30,6 +30,6 @@ func main() {
 	fs := http.FileServer(http.Dir("frontend/build"))
 	router.Handle("/*", fs)
 
-	http.ListenAndServe(":3333", router)
+	http.ListenAndServe(":4444", router)
 	fmt.Println("vim-go")
 }

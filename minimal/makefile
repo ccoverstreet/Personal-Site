@@ -1,2 +1,2 @@
 dev:
-	python -m http.server
+	cd html && python -m http.server
