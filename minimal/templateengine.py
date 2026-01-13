@@ -47,8 +47,20 @@ papers = [
 		"Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms",
 		"2024",
 		"https://www.sciencedirect.com/science/article/pii/S0168583X2400017X"
+    ),
+    Paper(
+        "Decoding the role of short-range structural order on magnetic and luminescent properties in entropy-enriched yttrium iron garnets",
+        ["Rubayet Tanveer", "Dylan Windsor", "Cale Overstreet", "Tatenda Kanyowa", "Bin Hu", "Maik K. Lang", "Haixuan Xu", "Veerle Keppens", "William J. Weber"],
+        "Acta Materialia",
+        "2026",
+        "https://doi.org/10.1016/j.actamat.2026.121927"
     )
 ]
+
+papers.sort(key=lambda x: x.year)
+papers.reverse()
+for paper in papers:
+    print(paper.year, paper.title)
 
 @dataclass
 class Presentation:
@@ -85,7 +97,6 @@ def generate_papers_html(papers):
     for n_paper, p in enumerate(papers):
         author_str = ""
         for i, a in enumerate(p.authors):
-            print(i, a, len(p.authors), i == len(p.authors) - 1)
             if "Cale" in a:
                 author_str += f"""<span style="font-weight: bold;">{a}</span>, """
             elif i == len(p.authors) - 1:
