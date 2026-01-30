@@ -54,6 +54,34 @@ papers = [
         "Acta Materialia",
         "2026",
         "https://doi.org/10.1016/j.actamat.2026.121927"
+    ),
+    Paper(
+        "Multi-Scale Structural Analysis of Swift Ion-Irradiated ZrO<sub>2</sub> and HfO<sub>2</sub>",
+        ["Alexandre P Solomon", "Eric C O’Quinn", "Cale C Overstreet", "Pascal Simon", "Christina Trautmann", "Changyong Park", "David Sprouster", "Gianguido Baldinozzi", "Maik K Lang"],
+        "Acta Materialia",
+        "2026",
+        "https://www.sciencedirect.com/science/article/pii/S1359645426000327"
+    ),
+    Paper(
+        "Influence of Compositional Complexity on Amorphization Resistance of Swift Heavy Ion Irradiated Titanate Pyrochlores",
+        ["George Adamson", "John Michael Hirtz", "Cale Overstreet", "Eric O’Quinn", "Candice Kinsler-Fedon", "Pascal Simon", "Changyong Park", "Xing Wang", "Tao Liang", "Haixuan Xu", "Veerle Keppens", "Katharine Page", "Maik Lang"],
+        "Inorganic Chemistry",
+        "2025",
+        "https://pubs.acs.org/doi/full/10.1021/acs.inorgchem.5c04254"
+    ),
+    Paper(
+        "Neutron Total Scattering Experiments at High Pressure: Measuring Crystalline Structural Heterogeneity using the SNAP Instrument at the Spallation Neutron Source",
+        ["John Hirtz", "Cale Overstreet", "Eric C O'Quinn", "Maik K Lang", "AM dos Santos", "Matthew Tucker"],
+        "Structural Dynamics",
+        "2025",
+        "https://pubs.aip.org/aca/sdy/article/12/5_Supplement/A103/3369504/Neutron-Total-Scattering-Experiments-at-High"
+    ),
+    Paper(
+        "Neutron Total Scattering Analysis of Materials for the Nuclear Fuel Cycle",
+        ["Eric C O’Quinn", "John M Hirtz", "Cale C Overstreet", "William F Cureton", "Igor M Gussev", "Alexandre P Solomon", "Maria Eugenia Toimil-Molares", "Maik K Lang"],
+        "Nuclear Science and Engineering",
+        "2025",
+        "https://www.tandfonline.com/doi/pdf/10.1080/00295639.2025.2525612"
     )
 ]
 
